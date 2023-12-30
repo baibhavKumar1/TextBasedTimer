@@ -6,7 +6,7 @@ const app= express();
 const cors = require('cors');
 app.use(express.json());
 app.use(cors());
-app.use('/users',UserRouter);
+app.use('/users',UserRouter); 
 app.use('/tasks',TaskRouter);
 
 app.listen(3000,async()=>{
